@@ -1,0 +1,98 @@
+$breakpoints:(
+    sm: 480px,
+    md: 768px,
+    lg: 960px,
+    xl: 1140px
+);
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #fff0dc;
+}
+img {
+    width: 100%;
+}
+
+.wrapper {
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.title {
+    width: 200px;
+}
+.t-center {
+    text-align: center;
+}
+
+
+%col {
+    padding: 15px;
+}
+@mixin rwd($w){
+    @media (min-width: $w){
+        @content;
+    }
+}
+@for $i from 1 through 12 {
+    .c-#{$i}{
+        flex: 1 0 100% / 12 * $i
+    }
+  }
+@each $size,$w in $breakpoints {
+    @for $i from 1 through 12 {
+      .c-#{$size}-#{$i}{
+        @extend %col;
+        // flex: 1 0 100% / 12 * $i
+        width: 100%;
+      }
+    }
+    @media screen and (min-width: $w){
+      .wrapper {
+        width: $w;
+      }
+      @for $i from 1 through 12 {
+        .c-#{$size}-#{$i}{
+            flex: 1 0 100% / 12 * $i
+        }
+      }
+    }
+  }
+// @for $i from 1 through 12 {
+//     .c-#{$i}{
+//         flex: 0 0 100% / 12 * $i
+//     }
+// }
+#feature .wrapper {
+    background: #fff;
+    border-radius: 55px;
+    padding: 50px 0;
+}
+#feature .row {
+    width: 100%;
+    margin: auto;
+    @include rwd(map-get($breakpoints,lg)){
+        width: 860px;
+    }
+}
+#feature .c-4 {
+    padding: 0 30px;
+}
+#sale {
+    padding: 100px 0;
+}
+.sale-content {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.sale-btn {
+    width: 280px;
+    display: block;
+    margin: 20px auto 30px;
+    @include rwd(map-get($breakpoints,sm)){
+        width: 300px;
+    }
+}
