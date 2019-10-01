@@ -12,6 +12,7 @@ body {
 }
 img {
     width: 100%;
+    vertical-align: middle;
 }
 
 .wrapper {
@@ -26,6 +27,7 @@ img {
 }
 .t-center {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 
@@ -95,4 +97,15 @@ img {
     @include rwd(map-get($breakpoints,sm)){
         width: 300px;
     }
+}
+#order .row {
+    width: 100%;
+    margin: auto;
+    @include rwd(map-get($breakpoints,lg)){
+        width: 860px;
+    }
+}
+.order-btn {
+    padding: 0;
+    margin: 0;
 }
