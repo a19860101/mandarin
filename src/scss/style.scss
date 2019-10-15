@@ -10,6 +10,11 @@ $breakpoints:(
 * {
     box-sizing: border-box;
 }
+html,body,h1,h2,h3,h4,h5,h6,p,ul,ol {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
 body {
     background: #fff0dc;
 }
@@ -20,6 +25,7 @@ img {
 
 .wrapper {
     margin: auto;
+    position: relative;
 }
 .row {
     display: flex;
@@ -71,6 +77,69 @@ img {
 //         flex: 0 0 100% / 12 * $i
 //     }
 // }
+//nav
+nav {
+    background:linear-gradient($deep-blue,$light-blue);
+
+}
+nav .wrapper {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo {
+    width: 200px;
+}
+nav .menu a{
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 15px;
+    text-decoration: none;
+    border-right: 1px solid #fff
+}
+//nav //
+// header
+#header {
+    background: url("../images/bg.png")no-repeat center center ;
+    background-size: cover;
+}
+#header .wrapper {
+    height: 600px;
+
+}
+.main-plane {
+    width: 80%;
+    position: absolute;
+    left: -300px;
+    top: 50px;
+}
+.main-c1 {
+    width: 250px;
+    position: absolute;
+    right: 100px;
+    top: 50px;
+}
+.main-c2 {
+    width: 150px;
+    position: absolute;
+    right: 350px;
+    top: 30px;
+}
+.main-left {
+    width: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+}
+.main-right {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+}
+
+// header //
 #feature .wrapper {
     background: #fff;
     border-radius: 55px;
@@ -82,6 +151,9 @@ img {
     @include rwd(map-get($breakpoints,lg)){
         width: 860px;
     }
+}
+#feature {
+    padding-top: 100px;
 }
 #feature .c-4 {
     padding: 0 30px;
