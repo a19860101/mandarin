@@ -196,3 +196,73 @@ nav .menu a{
     margin: 50px auto 0;
     width: 300px;
 }
+//area
+#area {
+    background: #ade2ff;
+    padding-top: 100px;
+}
+//area //
+.area-title {
+    width: 200px;
+    display: inline-block;
+    margin-right: 30px;
+}
+.area-other {
+    width: 120px;
+    display: inline-block;
+}
+.hotel {
+    margin-bottom: 10px;
+}
+.hotel, .food {
+    margin-left: 50px;
+}
+.hotel a, .food a {
+    border-right: 1px solid #000;
+    padding-right: 8px;
+    padding-left: 5px;
+    color: #666;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+.hotel img, .food img {
+    width: 40px;
+}
+
+#map-tc {
+    position: relative;
+}
+#map-tc a {
+    position: absolute;
+}
+.map-tc-1 {
+    width: 200px;
+    left: 100px;
+    top: 100px;
+}
+.map-tc-2 {
+    width: 200px;
+    left: 100px;
+    top: 400px;
+}
+.map-tc-3 {
+    width: 200px;
+    left: 200px;
+    top: 500px;
+}
+.map-tc-4 {
+    width: 100px;
+    left: 300px;
+    top:200px;
+}
+.map-tc-5 {
+    width: 100px;
+    left: 400px;
+    top: 350px;
+}
+.map-tc-6 {
+    width: 200px;
+    left: 500px;
+    top: 300px;
+}
