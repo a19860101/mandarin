@@ -8,6 +8,7 @@
     <title>華信假期 2.0</title>
     <link rel="stylesheet" href="css/style.css?123">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
 
     <style>
 
@@ -41,7 +42,7 @@
                 <img src="images/word.png" alt="">
             </div>
             <div class="main-right">
-                <img src="images/web_Final.gif" alt="">
+                <img src="images/motion.gif" alt="">
             </div>
         </div>
     </div>
@@ -186,29 +187,44 @@
                 <div class="c-md-12">
                     <div id="map-tc">
                         <img src="images/TC/D_TC_Map.png" alt="">
-                        <a href="#" class="map-tc-1">
+                        <a href="javascript:;" class="map-tc-1" @click="change(0)">
                             <img src="images/TC/D_TC_Map_1.png" alt="">
                         </a>
-                        <a href="#" class="map-tc-2">
+                        <a href="javascript:;" class="map-tc-2" @click="change(1)">
                             <img src="images/TC/D_TC_Map_2.png" alt="">
                         </a>
-                        <a href="#" class="map-tc-3">
+                        <a href="javascript:;" class="map-tc-3" @click="change(2)">
                             <img src="images/TC/D_TC_Map_3.png" alt="">
                         </a>
-                        <a href="#" class="map-tc-4">
+                        <a href="javascript:;" class="map-tc-4" @click="change(3)">
                             <img src="images/TC/D_TC_Map_4.png" alt="">
                         </a>
-                        <a href="#" class="map-tc-5">
+                        <a href="javascript:;" class="map-tc-5" @click="change(4)">
                             <img src="images/TC/D_TC_Map_5.png" alt="">
                         </a>
-                        <a href="#" class="map-tc-6">
+                        <a href="javascript:;" class="map-tc-6" @click="change(5)">
                             <img src="images/TC/D_TC_Map_6.png" alt="">
                         </a>
                     </div>
                 </div>
+                <div class="c-md-6">
+                    <a :href="tc.bOutput" data-fancybox="g">
+                        <img :src="tc.sOutput" alt="">
+                    </a>
+                </div>
+                <div class="c-md-6">
+                    <img :src="tc.titleOutput" class="map-title">
+                    <p class="map-desc">
+                        {{tc.descOutput}}
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

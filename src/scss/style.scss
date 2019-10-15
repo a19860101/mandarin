@@ -242,9 +242,9 @@ nav .menu a{
     top: 100px;
 }
 .map-tc-2 {
-    width: 200px;
+    width: 250px;
     left: 100px;
-    top: 400px;
+    top: 350px;
 }
 .map-tc-3 {
     width: 200px;
@@ -265,4 +265,13 @@ nav .menu a{
     width: 200px;
     left: 500px;
     top: 300px;
+}
+.map-title {
+    width: auto;
+    height: 30px;
+    margin-bottom: 15px;
+}
+.map-desc {
+    color: #444;
+    line-height: 1.5;
 }
