@@ -633,7 +633,7 @@ nav .menu a:nth-last-child(1) {
 }
 
 .main-plane {
-  width: 600px;
+  width: 500px;
   position: absolute;
   left: -200px;
   top: 20px;
@@ -680,7 +680,7 @@ nav .menu a:nth-last-child(1) {
 .main-left {
   -webkit-animation: ani1 3s infinite;
           animation: ani1 3s infinite;
-  width: 400px;
+  width: 300px;
   position: absolute;
   left: 20px;
   top: 120px;
@@ -711,9 +711,9 @@ nav .menu a:nth-last-child(1) {
 }
 
 .main-right {
-  width: 400px;
+  width: 320px;
   position: absolute;
-  right: 0;
+  right: 0px;
   top: 300px;
 }
 
