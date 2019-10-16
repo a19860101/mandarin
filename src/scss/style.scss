@@ -200,6 +200,7 @@ nav .menu a{
 #area {
     background: #ade2ff;
     padding-top: 100px;
+    padding-bottom: 200px;
 }
 //area //
 .area-title {
@@ -230,10 +231,10 @@ nav .menu a{
     width: 40px;
 }
 
-#map-tc {
+#map-tc,#map-td,#map-hl,#map-km,#map-ph {
     position: relative;
 }
-#map-tc a {
+#map-tc a, #map-td a, #map-hl a, #map-km a, #map-ph a {
     position: absolute;
 }
 .map-tc-1 {
@@ -266,6 +267,170 @@ nav .menu a{
     left: 500px;
     top: 300px;
 }
+//map-td
+.map-td-0 {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.map-td-1 {
+    width: 200px;
+    left:650px;
+    top:100px;
+}
+.map-td-2 {
+    width: 150px;
+    left:400px;
+    top:200px;
+}
+.map-td-3 {
+    width: 100px;
+    left:420px;
+    top:300px;
+}
+.map-td-4 {
+    width: 120px;
+    left:300px;
+    top:450px;
+}
+.map-td-5 {
+    width: 160px;
+    left:200px;
+    top:600px;
+}
+.map-td-6 {
+    width: 120px;
+    left:280px;
+    top:320px;
+}
+.map-td-7 {
+    width: 160px;
+    left:750px;
+    top:450px;
+}
+.map-td-8 {
+    width: 160px;
+    left:750px;
+    top:750px;
+}
+//hl
+.map-hl-0 {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.map-hl-1 {
+    width: 200px;
+    left:500px;
+    top:0px;
+}
+.map-hl-2 {
+    width: 150px;
+    left:550px;
+    top:180px;
+}
+.map-hl-3 {
+    width:200px;
+    left:450px;
+    top:350px;
+}
+.map-hl-4 {
+    width: 200px;
+    left:350px;
+    top:600px;
+}
+.map-hl-5 {
+    width: 160px;
+    left:850px;
+    top:0px;
+}
+.map-hl-6 {
+    width: 250px;
+    left:750px;
+    top:200px;
+}
+.map-hl-7 {
+    width: 160px;
+    left:750px;
+    top:450px;
+}
+//km
+.map-km-0 {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.map-km-1 {
+    width: 100px;
+    left:130px;
+    top:280px;
+}
+.map-km-2 {
+    width: 150px;
+    left:500px;
+    top:130px;
+}
+.map-km-3 {
+    width:130px;
+    left:500px;
+    top:280px;
+}
+.map-km-4 {
+    width: 200px;
+    left:680px;
+    top:150px;
+}
+.map-km-5 {
+    width: 180px;
+    left:800px;
+    top:50px;
+}
+.map-km-6 {
+    width: 200px;
+    left:620px;
+    top:350px;
+}
+//ph
+.map-ph-0 {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.map-ph-1 {
+    width: 150px;
+    left:330px;
+    top:350px;
+}
+.map-ph-2 {
+    width: 80px;
+    left:520px;
+    top:150px;
+}
+.map-ph-3 {
+    width:200px;
+    left:600px;
+    top:150px;
+}
+.map-ph-4 {
+    width: 220px;
+    left:620px;
+    top:300px;
+}
+.map-ph-5 {
+    width: 120px;
+    left:500px;
+    top:420px;
+}
+.map-ph-6 {
+    width: 200px;
+    left:620px;
+    top:400px;
+}
+.map-ph-7 {
+    width: 200px;
+    left:460px;
+    top:970px;
+}
 .map-title {
     width: auto;
     height: 30px;
@@ -274,4 +439,13 @@ nav .menu a{
 .map-desc {
     color: #444;
     line-height: 1.5;
+}
+.divide {
+    margin-top: 50px;
+}
+#gotop {
+    position: fixed;
+    right: 30px;
+    bottom:30px;
+    width: 50px;
 }

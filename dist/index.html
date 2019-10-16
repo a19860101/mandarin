@@ -139,7 +139,7 @@
     </div>
     <div class="container" id="area">
         <div class="wrapper">
-            <div class="row">
+            <div class="row" id="tc">
                 <div class="c-md-12">
                     <h2 class="t-center">
                         <img src="images/D.png" alt="" class="title">
@@ -219,9 +219,316 @@
                     </p>
                 </div>
             </div>
+            <div class="divide c-md-12"></div>
+            <div class="row" id="td">
+                <div class="c-md-12">
+                    <a href="#" class="area-title">
+                        <img src="images/TD/D_TD_1.png" s>
+                    </a>
+                    <a href="#" class="area-other">
+                        <img src="images/TD/D_TD_2.png">
+                    </a>
+                </div>
+                <div class="c-md-12">
+                    <div class="hotel">
+                        <img src="images/TD/D_TD_3.png">
+                        &nbsp;
+                        住宿推薦： 
+                        <a href="#">知本老爺</a>
+                        <a href="#">桂田喜來登</a>
+                        <a href="#">GAYA Hotel</a>
+                        <a href="#">旅人驛站</a>
+                        <a href="#">知本金聯世紀酒店</a>
+                    </div>
+                    <div class="food">
+                        <img src="images/TD/D_TD_4.png">
+                        &nbsp;
+                        美食推薦：
+                        <a href="#">榕樹下米苔目</a>
+                        <a href="#">德朱利斯紅藜榖物棒</a>
+                        <a href="#">池上便當</a>
+                        <a href="#">關山臭豆腐</a>
+                        <a href="#">封仔餅</a>
+                        <a href="#">紅烏龍茶</a>
+                        <a href="#">地瓜酥</a>
+                    </div>
+                </div>
+                <div class="c-md-12">
+                    <div id="map-td">
+                        <img src="images/TD/D_TD_Map.png" class="map-td-0">
+                        <a href="javascript:;" class="map-td-1" @click="change(0)">
+                            <img src="images/TD/D_TD_Map_1.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-td-2" @click="change(1)">
+                            <img src="images/TD/D_TD_Map_2.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-td-3" @click="change(2)">
+                            <img src="images/TD/D_TD_Map_3.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-td-4" @click="change(3)">
+                            <img src="images/TD/D_TD_Map_4.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-td-5" @click="change(4)">
+                            <img src="images/TD/D_TD_Map_5.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-td-6" @click="change(5)">
+                            <img src="images/TD/D_TD_Map_6.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-td-7" @click="change(6)">
+                            <img src="images/TD/D_TD_Map_7.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-td-8" @click="change(7)">
+                            <img src="images/TD/D_TD_Map_8.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="c-md-6">
+                    <a :href="bOutput" data-fancybox="g">
+                        <img :src="sOutput" alt="">
+                    </a>
+                </div>
+                <div class="c-md-6">
+                    <img :src="titleOutput" class="map-title">
+                    <p class="map-desc">
+                        {{descOutput}}
+                    </p>
+                </div>
+            </div>
+            <div class="divide c-md-12"></div>
+            <div class="row" id="hl">
+                <div class="c-md-12">
+                    <a href="#" class="area-title">
+                        <img src="images/HL/D_HL_1.png" s>
+                    </a>
+                    <a href="#" class="area-other">
+                        <img src="images/HL/D_HL_2.png">
+                    </a>
+                    <a href="#" class="area-other">
+                        <img src="images/HL/D_HL_3.png">
+                    </a>
+                </div>
+                <div class="c-md-12">
+                    <div class="hotel">
+                        <img src="images/HL/D_HL_4.png">
+                        &nbsp;
+                        住宿推薦： 
+                        <a href="#">遠雄悅來大飯店</a>
+                        <a href="#">理想大地渡假飯店</a>
+                        <a href="#">太魯閣晶英酒店</a>
+                        <a href="#">有熊的森林</a>
+                        <a href="#">捷絲旅</a>
+                        <a href="#">美侖大飯店</a>
+                        <a href="#">翰品酒店</a>
+                    </div>
+                    <div class="food">
+                        <img src="images/HL/D_HL_5.png">
+                        &nbsp;
+                        美食推薦：
+                        <a href="#">曾記麻糬</a>
+                        <a href="#">公正包子</a>
+                        <a href="#">炸彈蔥油餅</a>
+                        <a href="#">廟口紅茶</a>
+                        <a href="#">奶油酥條</a>
+                        <a href="#">洄瀾薯道</a>
+                        <a href="#">花蓮扁食</a>
+                    </div>
+                </div>
+                <div class="c-md-12">
+                    <div id="map-hl">
+                        <img src="images/HL/D_HL_Map.png" class="map-hl-0">
+                        <a href="javascript:;" class="map-hl-1" @click="change(0)">
+                            <img src="images/HL/D_HL_Map_1.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-hl-2" @click="change(1)">
+                            <img src="images/HL/D_HL_Map_2.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-hl-3" @click="change(2)">
+                            <img src="images/HL/D_HL_Map_3.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-hl-4" @click="change(3)">
+                            <img src="images/HL/D_HL_Map_4.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-hl-5" @click="change(4)">
+                            <img src="images/HL/D_HL_Map_5.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-hl-6" @click="change(5)">
+                            <img src="images/HL/D_HL_Map_6.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-hl-7" @click="change(5)">
+                            <img src="images/HL/D_HL_Map_7.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="c-md-6">
+                    <a :href="bOutput" data-fancybox="g">
+                        <img :src="sOutput" alt="">
+                    </a>
+                </div>
+                <div class="c-md-6">
+                    <img :src="titleOutput" class="map-title">
+                    <p class="map-desc">
+                        {{descOutput}}
+                    </p>
+                </div>
+            </div>
+            <div class="divide c-md-12"></div>
+            <div class="row" id="km">
+                <div class="c-md-12">
+                    <a href="#" class="area-title">
+                        <img src="images/KM/D_KM_1.png" s>
+                    </a>
+                    <a href="#" class="area-other">
+                        <img src="images/KM/D_KM_2.png">
+                    </a>
+                    <a href="#" class="area-other">
+                        <img src="images/KM/D_KM_3.png">
+                    </a>
+                </div>
+                <div class="c-md-12">
+                    <div class="hotel">
+                        <img src="images/KM/D_KM_4.png">
+                        &nbsp;
+                        住宿推薦： 
+                        <a href="#">金湖大飯店</a>
+                        <a href="#">金沙大地國際渡假飯店</a>
+                        <a href="#">金城艾美商旅</a>
+                        <a href="#">IN99</a>
+                    </div>
+                    <div class="food">
+                        <img src="images/KM/D_KM_5.png">
+                        &nbsp;
+                        美食推薦：
+                        <a href="#">廣東粥</a>
+                        <a href="#">貢糖</a>
+                        <a href="#">閩式燒餅</a>
+                        <a href="#">高梁冰淇淋蛋捲</a>
+                        <a href="#">蚵嗲之家</a>
+                        <a href="#">酒槽牛肉麵</a>
+                        <a href="#">高粱酒</a>
+                    </div>
+                </div>
+                <div class="c-md-12">
+                    <div id="map-km">
+                        <img src="images/KM/D_KM_Map.png" class="map-km-0">
+                        <a href="javascript:;" class="map-km-1" @click="change(0)">
+                            <img src="images/KM/D_KM_Map_1.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-km-2" @click="change(1)">
+                            <img src="images/KM/D_KM_Map_2.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-km-3" @click="change(2)">
+                            <img src="images/KM/D_KM_Map_3.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-km-4" @click="change(3)">
+                            <img src="images/KM/D_KM_Map_4.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-km-5" @click="change(4)">
+                            <img src="images/KM/D_KM_Map_5.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-km-6" @click="change(5)">
+                            <img src="images/KM/D_KM_Map_6.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-km-7" @click="change(6)">
+                            <img src="images/KM/D_KM_Map_7.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="c-md-6">
+                    <a :href="bOutput" data-fancybox="g">
+                        <img :src="sOutput" alt="">
+                    </a>
+                </div>
+                <div class="c-md-6">
+                    <img :src="titleOutput" class="map-title">
+                    <p class="map-desc">
+                        {{descOutput}}
+                    </p>
+                </div>
+            </div>
+            <div class="divide c-md-12"></div>
+            <div class="row" id="ph">
+                <div class="c-md-12">
+                    <a href="#" class="area-title">
+                        <img src="images/PH/D_PH_1.png" s>
+                    </a>
+                    <a href="#" class="area-other">
+                        <img src="images/PH/D_PH_2.png">
+                    </a>
+                    <a href="#" class="area-other">
+                        <img src="images/PH/D_PH_3.png">
+                    </a>
+                    <a href="#" class="area-other">
+                        <img src="images/PH/D_PH_4.png">
+                    </a>
+                </div>
+                <div class="c-md-12">
+                    <div class="hotel">
+                        <img src="images/PH/D_PH_5.png">
+                        &nbsp;
+                        住宿推薦： 
+                        <a href="#">澎湖福朋喜來登</a>
+                        <a href="#">澎澄飯店</a>
+                        <a href="#">海洋渡假村</a>
+                        <a href="#">元泰大飯店</a>
+                        <a href="#">貳拾貳隱巷</a>
+                        <a href="#">百世多麗花園酒店</a>
+                    </div>
+                    <div class="food">
+                        <img src="images/PH/D_PH_6.png">
+                        &nbsp;
+                        美食推薦：
+                        <a href="#">澎湖海鮮</a>
+                        <a href="#">黑糖糕</a>
+                        <a href="#">仙人掌冰</a>
+                        <a href="#">福牡蠣屋</a>
+                        <a href="#">馬路益燒肉飯</a>
+                        <a href="#">XO干貝醬</a>
+                        <a href="#">鹹餅</a>
+                    </div>
+                </div>
+                <div class="c-md-12">
+                    <div id="map-ph">
+                        <img src="images/PH/D_PH_Map.png" class="map-ph-0">
+                        <a href="javascript:;" class="map-ph-1" @click="change(0)">
+                            <img src="images/PH/D_PH_Map_1.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-ph-2" @click="change(1)">
+                            <img src="images/PH/D_PH_Map_2.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-ph-3" @click="change(2)">
+                            <img src="images/PH/D_PH_Map_3.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-ph-4" @click="change(3)">
+                            <img src="images/PH/D_PH_Map_4.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-ph-5" @click="change(4)">
+                            <img src="images/PH/D_PH_Map_5.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-ph-6" @click="change(5)">
+                            <img src="images/PH/D_PH_Map_6.png" alt="">
+                        </a>
+                        <a href="javascript:;" class="map-ph-7" @click="change(6)">
+                            <img src="images/PH/D_PH_Map_7.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="c-md-6">
+                    <a :href="bOutput" data-fancybox="g">
+                        <img :src="sOutput" alt="">
+                    </a>
+                </div>
+                <div class="c-md-6">
+                    <img :src="titleOutput" class="map-title">
+                    <p class="map-desc">
+                        {{descOutput}}
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+    
+    <a href="#"><img src="images/top.png" id="gotop"></a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="js/script.js"></script>
