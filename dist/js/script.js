@@ -276,6 +276,13 @@ $(function(){
             scrollTop: o
         })
     })
+    $('.main-right').find('a').click(function(){
+        var href = $(this).attr('href');
+        var o = $(href).offset().top;
+        $('html,body').animate({
+            scrollTop: o
+        })
+    })
     $('a #gotop').click(function(){
         $('html,body').animate({
             scrollTop: 0
