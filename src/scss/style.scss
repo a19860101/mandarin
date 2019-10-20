@@ -9,7 +9,7 @@ $breakpoints:(
 );
 * {
     box-sizing: border-box;
-    font-family: 'Microsft Jhenghei';
+    font-family: 'Microsoft Jhenghei';
 }
 html,body,h1,h2,h3,h4,h5,h6,p,ul,ol {
     margin: 0;
@@ -224,7 +224,7 @@ nav .menu a{
     padding-right: 30px;
 }
 .sale-btn {
-    width: 280px;
+    width: 75%;
     display: block;
     margin: 20px auto 30px;
     @include rwd(map-get($breakpoints,sm)){
@@ -239,7 +239,7 @@ nav .menu a{
     padding-bottom: 50px;
 }
 #order .row {
-    width: 100%;
+    width: 90%;
     margin: auto;
     @include rwd(map-get($breakpoints,lg)){
         width: 860px;
@@ -252,7 +252,10 @@ nav .menu a{
 .order-btn-go {
     display: block;
     margin: 50px auto 0;
-    width: 300px;
+    width: 100%;
+    @include rwd(map-get($breakpoints,lg)){
+        width: 300px;
+    }
 }
 //area
 #area {

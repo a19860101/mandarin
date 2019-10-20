@@ -1,7 +1,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Microsft Jhenghei';
+  font-family: 'Microsoft Jhenghei';
 }
 
 html, body, h1, h2, h3, h4, h5, h6, p, ul, ol {
@@ -776,7 +776,7 @@ nav .menu a:nth-last-child(1) {
 }
 
 .sale-btn {
-  width: 280px;
+  width: 75%;
   display: block;
   margin: 20px auto 30px;
 }
@@ -797,7 +797,7 @@ nav .menu a:nth-last-child(1) {
 }
 
 #order .row {
-  width: 100%;
+  width: 90%;
   margin: auto;
 }
 
@@ -815,7 +815,13 @@ nav .menu a:nth-last-child(1) {
 .order-btn-go {
   display: block;
   margin: 50px auto 0;
-  width: 300px;
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .order-btn-go {
+    width: 300px;
+  }
 }
 
 #area {
