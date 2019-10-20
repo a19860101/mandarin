@@ -276,7 +276,11 @@ nav .menu a{
 }
 .hotel {
     margin-bottom: 10px;
+    &:hover {
+        color: $light-blue;
+    }
 }
+
 .hotel, .food {
     margin-left: 0;
     @include rwd(map-get($breakpoints,md)){
