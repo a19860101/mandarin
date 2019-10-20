@@ -272,7 +272,7 @@ $(function(){
         var IMG = new Image();
         if(IMG.complete){
             console.log(IMG.complete);
-            $('#loading').fadeOut();
+            $('#loading').delay(1000).fadeOut();
         }
     }
     $('.toggle').find('a').click(function(){
