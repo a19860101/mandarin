@@ -276,8 +276,10 @@ nav .menu a{
 }
 .hotel {
     margin-bottom: 10px;
-    &:hover {
-        color: $light-blue;
+    a {
+        &:hover {
+            color: $light-blue;
+        }
     }
 }
 

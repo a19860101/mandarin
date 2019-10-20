@@ -846,7 +846,7 @@ nav .menu a:nth-last-child(1) {
   margin-bottom: 10px;
 }
 
-.hotel:hover {
+.hotel a:hover {
   color: #0068b6;
 }
 
