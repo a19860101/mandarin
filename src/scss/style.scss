@@ -81,31 +81,64 @@ img {
 //nav
 nav {
     background:linear-gradient($deep-blue,$light-blue);
-
-}
-nav .wrapper {
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    @include rwd(map-get($breakpoints,md)){
-        flex-direction: row;
-        height: 70px;
-        justify-content: space-between;
+    .wrapper {
+        // height: 100px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        @include rwd(map-get($breakpoints,md)){
+            flex-direction: row;
+            height: 70px;
+            justify-content: space-between;
+        }
     }
-}
-nav .logo {
-    width: 200px;
-}
-nav .menu a{
-    color: #fff;
-    padding-left: 10px;
-    padding-right: 15px;
-    text-decoration: none;
-    border-right: 1px solid #fff;
-    &:nth-last-child(1){
-        border: 0;
+    .logo {
+        width: 200px;
+    }
+    .menu{
+        display: none;
+        margin-right: auto;
+        @include rwd(map-get($breakpoints,md)){
+            display: block;
+            margin-right: 0;
+        }
+        a{
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border: 0;
+            display: block;
+            @include rwd(map-get($breakpoints,md)){
+                display: inline;
+                padding: 0 10px 0 15px;
+                border-right: 1px solid #fff;
+                &:nth-last-child(1){
+                    border: 0;
+                }
+            }
+            i {
+                width: 30px;
+                text-align: center;
+                @include rwd(map-get($breakpoints,md)){
+                    width: auto;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .toggle {
+        display: block;
+        margin-top: 10px;
+        @include rwd(map-get($breakpoints,md)){
+            display: none;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
     }
 }
 
@@ -274,8 +307,11 @@ nav .menu a{
     }
 }
 .area-other {
-    width: 120px;
+    width: 90px;
     display: inline-block;
+    @include rwd(map-get($breakpoints,md)){
+        width: 120px;
+    }
 }
 .hotel {
     margin-bottom: 10px;
