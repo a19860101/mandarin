@@ -344,6 +344,11 @@ nav {
         margin-left: 50px;
     }
 }
+.food {
+    a {
+        cursor: text;
+    }
+}
 .hotel a, .food a {
     border-right: 1px solid #000;
     padding-right: 8px;
