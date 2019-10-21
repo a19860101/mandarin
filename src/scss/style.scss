@@ -292,7 +292,7 @@ nav {
 .order-btn-go {
     display: block;
     margin: 50px auto 0;
-    width: 100%;
+    width: 75%;
     @include rwd(map-get($breakpoints,lg)){
         width: 300px;
     }

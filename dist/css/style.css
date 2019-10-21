@@ -877,7 +877,7 @@ nav .toggle a {
 .order-btn-go {
   display: block;
   margin: 50px auto 0;
-  width: 100%;
+  width: 75%;
 }
 
 @media (min-width: 960px) {
