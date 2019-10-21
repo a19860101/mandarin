@@ -285,6 +285,14 @@ $(function(){
             scrollTop: o
         })
     })
+    $(window).resize(function(){
+        var w = $(window).width();
+        if(w > 768){
+            $('.menu').show();
+        }else{
+            $('.menu').hide();
+        }
+    })
     $('.main-right').find('a').click(function(){
         var href = $(this).attr('href');
         var o = $(href).offset().top;
