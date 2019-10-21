@@ -608,18 +608,29 @@ nav .wrapper {
   }
 }
 
+nav .ham {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
 nav .logo {
   width: 200px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-left: 10px;
 }
 
 nav .menu {
   display: none;
   margin-right: auto;
+  margin-top: 15px;
 }
 
 @media (min-width: 768px) {
   nav .menu {
     display: block;
+    margin-top: 0;
     margin-right: 0;
   }
 }

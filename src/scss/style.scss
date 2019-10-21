@@ -95,14 +95,23 @@ nav {
             justify-content: space-between;
         }
     }
+    .ham {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
     .logo {
         width: 200px;
+        align-self: flex-start;
+        padding-left: 10px;
     }
     .menu{
         display: none;
         margin-right: auto;
+        margin-top: 15px;
         @include rwd(map-get($breakpoints,md)){
             display: block;
+            margin-top: 0;
             margin-right: 0;
         }
         a{
