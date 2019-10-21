@@ -150,8 +150,10 @@ nav {
     background-size: cover;
 }
 #header .wrapper {
-    height: 600px;
-
+    height: 548px;
+    @include rwd(map-get($breakpoints,sm)){
+        height: 600px;
+    }
 }
 .main-plane {
     width: 500px;
