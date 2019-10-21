@@ -228,7 +228,7 @@ nav {
         right: -36px;
         top: 180px;
     }
-    @include rwd(map-get($breakpoints,lg)){
+    @include rwd(map-get($breakpoints,xl)){
         width: 60%;
         right: -36px;
         top: 180px;

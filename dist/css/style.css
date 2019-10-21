@@ -789,7 +789,7 @@ nav .toggle a {
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1140px) {
   .main-right {
     width: 60%;
     right: -36px;
