@@ -267,14 +267,14 @@ new Vue({
 })
 
 $(function(){
-    var img = document.getElementsByTagName('img');
-    for(var i=0;i<img.length;i++){
-        var IMG = new Image();
-        if(IMG.complete){
-            console.log(IMG.complete);
-            $('#loading').delay(1000).fadeOut();
-        }
-    }
+    // var img = document.getElementsByTagName('img');
+    // for(var i=0;i<img.length;i++){
+    //     var IMG = new Image();
+    //     if(IMG.complete){
+    //         console.log(IMG.complete);
+    //         $('#loading').delay(1000).fadeOut();
+    //     }
+    // }
     $('.toggle').find('a').click(function(){
         $('.menu').slideToggle();
     })
