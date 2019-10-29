@@ -7,9 +7,9 @@
     "gulp": "^4.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/preset-env": "^7.6.2",
-    "gulp-babel": "^8.0.0-beta.2",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "gulp-babel": "^8.0.0",
     "gulp-csso": "^3.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-watch": "^5.0.1",
