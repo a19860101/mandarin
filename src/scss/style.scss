@@ -300,6 +300,7 @@ nav {
 #order .row {
     width: 90%;
     margin: auto;
+    justify-content: center;
     @include rwd(map-get($breakpoints,lg)){
         width: 860px;
     }
@@ -307,6 +308,7 @@ nav {
 .order-btn {
     padding: 0;
     margin: 0;
+    flex-grow: 0;
 }
 .order-btn-go {
     display: block;
