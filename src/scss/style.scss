@@ -172,6 +172,7 @@ nav {
     height: 548px;
     @include rwd(map-get($breakpoints,sm)){
         height: 600px;
+        overflow: hidden;
     }
 }
 .main-plane {
